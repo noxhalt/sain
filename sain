@@ -1,0 +1,17 @@
+tmp=$(mktemp -d)
+
+for item in $*; do
+  cd $tmp
+  mkdir $item
+  cd $item
+  curl -o PKGBUILD "https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=${item}"
+  grep '^<!DOCTYPE' PKGBUILD >/dev/null
+  if [[ $? -eq 0 ]]; then
+    echo "Error: Package not found." >&2
+    continue
+  fi
+  makepkg -si
+done
+
+rm -r $tmp
+
