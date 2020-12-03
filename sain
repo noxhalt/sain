@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 tmp=$(mktemp -d)
 
 for item in $*; do
