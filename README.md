@@ -1,5 +1,5 @@
 # sain - Simple Aur Installer
-Just a install only aur helper.
+ Install only AUR helper.
 
 ## How to use
 
