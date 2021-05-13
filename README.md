@@ -1,22 +1,31 @@
-# sain - Simple Aur Installer
- Install only AUR helper.
+# sain
 
-## How to use
+Git less, Small, Simple AUR helper.
+
+> Warning: Using AUR package is at your own risk.
+
+## Require
+
+- bash
+- coreutil
+- curl
+- grep
+- pacman
+
+## Install
+
+```shell
+# zplug
+zplug 'nxhlt/sain', as:command, use:sain
+```
+
+## Usage
 
 ```
 ./sain [aur-packages...]
 ```
 
-## Why?
+## Motivation
 
-I heard we can download *Plaintext PKGBUILD* from AUR.  
-So, I tried creating simple aur installer.
-
-## Feature
-
-Install only!  
-You can `./sain yay-bin`.
-
-## Warning
-
-Using AUR is at your own risk.
+I heard we can download *Plaintext PKGBUILD* from AUR with curl.  
+So I created for embedded/container environment.
