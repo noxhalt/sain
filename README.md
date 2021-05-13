@@ -1,6 +1,6 @@
 # sain
 
-Git less, Small, Simple AUR helper.
+Git less, Small, Simple AUR helper. (Install only)
 
 > Warning: Using AUR package is at your own risk.
 
@@ -17,6 +17,10 @@ Git less, Small, Simple AUR helper.
 ```shell
 # zplug
 zplug 'nxhlt/sain', as:command, use:sain
+
+# curl
+curl https://raw.githubusercontent.com/nxhlt/sain/main/sain > sain
+
 ```
 
 ## Usage
