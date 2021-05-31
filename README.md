@@ -20,6 +20,7 @@ zplug 'nxhlt/sain', as:command, use:sain
 
 # curl
 curl https://raw.githubusercontent.com/nxhlt/sain/main/sain > sain
+chmod +x sain
 
 ```
 
